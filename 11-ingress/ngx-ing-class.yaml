@@ -1,0 +1,8 @@
+# Ingress Class YAML
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: ngx-ink
+
+spec:
+  controller: nginx.org/ingress-controller

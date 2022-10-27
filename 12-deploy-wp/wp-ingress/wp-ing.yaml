@@ -1,0 +1,20 @@
+# wp-ingress/wp-ing.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: wp-ing
+
+spec:
+  ingressClassName: wp-ink
+
+  rules:
+  - host: wp.test
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: wp-svc
+            port:
+              number: 80

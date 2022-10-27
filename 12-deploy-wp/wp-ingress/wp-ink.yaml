@@ -1,0 +1,8 @@
+# wp-ingress/wp-ink.yaml
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: wp-ink
+
+spec:
+  controller: nginx.org/ingress-controller
