@@ -29,3 +29,5 @@ notes on handling kubernetes cluster
 [【Kubernetes】K8s笔记（十二）：中级篇实战和小结](https://www.cnblogs.com/joexu01/p/16818593.html)
 
 [【Kubernetes】K8s笔记（十三）：PersistentVolume 解决数据持久化问题](https://www.cnblogs.com/joexu01/p/16823747.html)
+
+[【Kubernetes】K8s笔记（十四）：PersistentVolume 使用网络共享存储（NFS）](https://www.cnblogs.com/joexu01/p/16836482.html)

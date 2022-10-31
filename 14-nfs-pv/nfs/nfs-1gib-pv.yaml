@@ -1,0 +1,16 @@
+# nfs-1gib-pv.yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-1gib-pv
+
+spec:
+  storageClassName: nfs
+  accessModes:
+    - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+  nfs:
+    path: /data/nfs/1gib-pv
+    server: 172.16.63.131

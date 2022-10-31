@@ -1,0 +1,14 @@
+# nfs/test/nfs-provisioner-pvc.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-dyn-10mib-pvc
+
+spec:
+  storageClassName: nfs-client
+  accessModes:
+    - ReadWriteMany
+
+  resources:
+    requests:
+      storage: 10Mi
